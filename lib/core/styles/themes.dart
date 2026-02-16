@@ -5,13 +5,13 @@ import 'package:green_app/core/constants/fonts.dart';
 ThemeData theme() {
   return ThemeData(
     fontFamily: AppFonts.poppins,
-    scaffoldBackgroundColor: ColorApp.background,
+    scaffoldBackgroundColor: AppColors.background,
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
-        backgroundColor: ColorApp.primary,
+        backgroundColor: AppColors.primary,
         minimumSize: const Size(double.infinity, 55),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-        foregroundColor: ColorApp.background,
+        foregroundColor: AppColors.background,
       ),
     ),
     textButtonTheme: TextButtonThemeData(
@@ -21,9 +21,9 @@ ThemeData theme() {
       ),
     ),
     colorScheme: ColorScheme.fromSeed(
-      seedColor: ColorApp.primary,
+      seedColor: AppColors.primary,
       // text color
-      onSurface: ColorApp.black,
+      onSurface: AppColors.black,
     ),
   );
 }

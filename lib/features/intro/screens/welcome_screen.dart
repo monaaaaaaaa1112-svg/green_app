@@ -31,7 +31,7 @@ class WelcomeScreen extends StatelessWidget {
                   SvgPicture.asset(
                     AppImages.carrotSvg,
                     colorFilter: ColorFilter.mode(
-                      ColorApp.background,
+                      AppColors.background,
                       BlendMode.srcIn,
                     ),
                   ),
@@ -40,14 +40,14 @@ class WelcomeScreen extends StatelessWidget {
                     'Welcome\nto Green Mart',
                     textAlign: TextAlign.center,
                     style: TextStyles.headline.copyWith(
-                      color: ColorApp.background,
+                      color: AppColors.background,
                     ),
                   ),
                   SizedBox(height: 10),
                   Text(
                     'Ger your groceries in as fast as one hour',
                     style: TextStyles.caption1.copyWith(
-                      color: ColorApp.background,
+                      color: AppColors.background,
                     ),
                   ),
                   SizedBox(height: 20),

@@ -15,17 +15,16 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
-    // delay for 3 seconds and then navigate to the next screen
+    super.initState();
     Future.delayed(Duration(seconds: 3), () {
       pushReplacement(context, WelcomeScreen());
     });
-    super.initState();
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: ColorApp.primary,
+      backgroundColor: AppColors.primary,
       body: Center(child: SvgPicture.asset(AppImages.logoSvg, width: 250)),
     );
   }
