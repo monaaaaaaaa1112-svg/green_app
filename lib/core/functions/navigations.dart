@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:green_app/features/auth/screens/verification_screen.dart';
 
 void pushReplacement(BuildContext context, Widget newScreen) {
   Navigator.pushReplacement(

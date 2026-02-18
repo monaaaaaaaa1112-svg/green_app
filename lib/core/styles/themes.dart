@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:green_app/core/styles/colors.dart';
 import 'package:green_app/core/constants/fonts.dart';
+import 'package:green_app/core/styles/text_style.dart';
 
 ThemeData theme() {
   return ThemeData(
@@ -24,6 +25,15 @@ ThemeData theme() {
       seedColor: AppColors.primary,
       // text color
       onSurface: AppColors.black,
+    ),
+    inputDecorationTheme: InputDecorationTheme(
+      hintStyle: TextStyles.caption2,
+      fillColor: AppColors.accent,
+      filled: true,
+      border: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(20),
+        borderSide: BorderSide.none,
+      ),
     ),
   );
 }

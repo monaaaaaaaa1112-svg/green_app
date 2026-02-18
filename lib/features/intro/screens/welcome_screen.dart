@@ -4,6 +4,8 @@ import 'package:green_app/core/constants/images_app.dart';
 import 'package:green_app/core/styles/colors.dart';
 import 'package:green_app/core/styles/text_style.dart';
 import 'package:green_app/core/widgets/main_button.dart';
+import 'package:green_app/core/functions/navigations.dart';
+import 'package:green_app/features/auth/screens/login_screen.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});
@@ -51,7 +53,12 @@ class WelcomeScreen extends StatelessWidget {
                     ),
                   ),
                   SizedBox(height: 20),
-                  MainButton(text: 'Get Started', onPressed: () {}),
+                  MainButton(
+                    text: 'Get Started',
+                    onPressed: () {
+                      pushReplacement(context, LoginScreen());
+                    },
+                  ),
                 ],
               ),
             ),

@@ -17,7 +17,7 @@ abstract class TextStyles {
   static const TextStyle body = TextStyle(fontSize: 16);
   static const TextStyle caption1 = TextStyle(fontSize: 14);
   static const TextStyle caption2 = TextStyle(
-    fontSize: 12,
+    fontSize: 16,
     color: AppColors.grey,
   );
 }
